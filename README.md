@@ -19,7 +19,7 @@ Anomaly detection (AD) aims to detect instances containing patterns that are sig
 
 <details>
 <summary>
-  ### Prepare Dataset
+Prepare Dataset
 </summary>
   
     bash run_scripts/construct_dataset.sh
@@ -29,14 +29,66 @@ Anomaly detection (AD) aims to detect instances containing patterns that are sig
 
 <details>
 <summary>
-  ### Train Networks 
+Train and Evaluate Networks 
 </summary>
-  - Train and evaluate our network and CFlow-AD for all categories  
-  
-    bash run_scripts/train_eval_total.sh
-
-  - Train and evaluate our network and CFlow-AD by selecting class_name (ex. bottle)
-  
-    bash run_scripts/mvtec/bottle/train_eval_total.sh
+- Train and evaluate our network and CFlow-AD for all categories  
+    
+      bash run_scripts/train_eval_total.sh
+      
+- Train and evaluate our network and CFlow-AD by selecting class_name (ex. bottle)
+    
+      bash run_scripts/mvtec/bottle/train_eval_total.sh
 
 </details>
+
+<details>
+<summary>
+Inference Our Reference MVTec Results
+</summary>
+- Download checkpoints
+- We trained every models three times with random initialization to avoid over-estimation by each model. 
+- Among three experimental results, we seleced the best results for each category and uploaded the models at the google drive.
+- You can download checkpoints of the models using the command below. 
+    
+      bash run_scripts/download_best_models.sh
+      
+- Evaluate the best models of the proposed method and CFlow-AD for all categories and parse results
+    
+      bash run_scripts/eval_best_models.sh
+      
+- Evaluate the best models of the proposed method and CFlow-AD by selecting class_name (ex. bottle)
+    
+      bash run_scripts/mvtec/bottle/eval_best_models.sh
+
+</details>
+
+
+## Architecture
+
+
+## The Quantiative Results
+<details>
+<summary>
+Reference Results for MVTec (Averaged on three runs with different random initialization)
+</summary>
+
+
+</details>
+
+<details>
+<summary>
+Best Results for MVTec (Results of the uploaded checkpoint)
+</summary>
+
+
+</details>
+
+
+## Credits
+
+
+## License
+
+This project is licensed under the MIT License.
+
+
