@@ -8,7 +8,7 @@ Anomaly detection (AD) aims to detect instances containing patterns that are sig
 ## Quick Start
 <details>
 <summary>
-  ### Install
+Install
 </summary>
   
     git clone https://github.com/meitu
@@ -31,6 +31,7 @@ Prepare Dataset
 <summary>
 Train and Evaluate Networks 
 </summary>
+  
 - Train and evaluate our network and CFlow-AD for all categories  
     
       bash run_scripts/train_eval_total.sh
@@ -45,9 +46,13 @@ Train and Evaluate Networks
 <summary>
 Inference Our Reference MVTec Results
 </summary>
+  
 - Download checkpoints
+
 - We trained every models three times with random initialization to avoid over-estimation by each model. 
+
 - Among three experimental results, we seleced the best results for each category and uploaded the models at the google drive.
+
 - You can download checkpoints of the models using the command below. 
     
       bash run_scripts/download_best_models.sh
