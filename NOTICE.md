@@ -1,4 +1,4 @@
-NOTICE for [Your Project Name]
+### NOTICE for [Your Project Name]
 
 [Your Project Name]
 
@@ -9,19 +9,21 @@ This product includes software developed by the followings:
 
 Original Codes
 
+<details>
+<summary>
 1. CFlow-AD
+</summary>
+
     - Project: CFlow-AD (Real-Time Unsupervised Anomaly Detection with Localization via Conditional Normalizing Flows)
     - URL: https://github.com/gudovskiy/cflow-ad/tree/master
+    - Copyright (c) 2021, Panasonic AI Lab of Panasonic Corporation of North America.
+    - License: BSD 3-Clause (https://opensource.org/license/bsd-3-clause/)
+    - See the original LICENSE file for details.
+    - We implemented our method based on this software.
+    - Portions of this software have been modified for our purposes by Seungmi Oh.
+
+</details>
     
-    * Copyright (c) 2021, Panasonic AI Lab of Panasonic Corporation of North America.
-  
-    * License: BSD 3-Clause (https://opensource.org/license/bsd-3-clause/)
-  
-    * See the original LICENSE file for details.
-  
-    * We implemented our method based on this software.
-  
-    * Portions of this software have been modified for our purposes by Seungmi Oh.
 
 2. DRAEM
     - Project: DRAEM (A Discriminatively Trained Reconstruction Embedding for Surface Anomaly Detection)
