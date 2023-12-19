@@ -22,6 +22,7 @@ Install
 <summary>
 Prepare Dataset
 </summary>
+  
 - We used [MVTec AD]<https://www.mvtec.com/company/research/datasets/mvtec-ad/> dataset to train and inference networks for anomaly detection and localization for quality inspection in Industry. 
   We also generated synthetic defect data using the [DTD]<https://www.robots.ox.ac.uk/~vgg/data/dtd/> dataset to finetune a feature extractor of CNF networks by training the pixel-wise classification network.
     
