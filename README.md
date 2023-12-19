@@ -75,7 +75,7 @@ Inference Our Reference MVTec Results
 
 
 ## Architecture
-
+![image](https://github.com/SeungMi-OH/2023_Access/assets/141846117/5a6435a7-86d2-492c-a27c-a3a11cc68cb8)
 
 ## The Quantiative Results
 <details>
