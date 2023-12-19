@@ -136,9 +136,11 @@ Best Results for MVTec (Results of the uploaded checkpoint)
 
 ## Credits
 
+We implemented our method using some portions of the codes of [CFlow-AD]<https://github.com/gudovskiy/cflow-ad>, [DRAEM]<https://github.com/VitjanZ/DRAEM>, and [CDO]<https://github.com/caoyunkang/CDO> projects.  
+We add a NOTICE file (NOTICE.md) to give credits the authors of the projects. 
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under [the MIT License]<https://opensource.org/license/mit/>.
 
 
