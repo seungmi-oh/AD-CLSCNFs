@@ -83,7 +83,7 @@ Inference Our Reference MVTec Results
 Reference Results for MVTec (Averaged on three runs with different random initialization)
 </summary>
   
-| Method            | PaDiM                                   || Cflow-AD                                || DRAEM                                   || CDO                                     || Proposed Method                                |
+| Method            | PaDiM                                   || Cflow-AD                                || DRAEM                                   || CDO                                     || Proposed Method                               ||
 |-------------------|:---------:|:---------:|:--------:|:-----:|:---------:|:---------:|:--------:|:-----:|:---------:|:---------:|:--------:|:-----:|:---------:|:---------:|:--------:|:-----:|:---------------:|:---------:|:--------:|:-----:|
 | Metric \ Category | Img AUROC | Pix AUROC | Pix AUPR | AUPRO | Img AUROC | Pix AUROC | Pix AUPR | AUPRO | Img AUROC | Pix AUROC | Pix AUPR | AUPRO | Img AUROC | Pix AUROC | Pix AUPR | AUPRO | Img AUROC       | Pix AUROC | Pix AUPR | AUPRO |
 | Bottle            | 100.00    | 98.71     | 72.79    | 94.48 | 100.00    | 98.74     | 73.54    | 94.48 | 99.73     | 99.27     | 89.90    | 96.27 | 100.00    | 99.18     | 86.28    | 96.51 | 99.89           | 99.12     | 88.06    | 96.60 |
