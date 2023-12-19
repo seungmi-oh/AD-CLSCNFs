@@ -82,6 +82,7 @@ Inference Our Reference MVTec Results
 <summary>
 Reference Results for MVTec (Averaged on three runs with different random initialization)
 </summary>
+  
 | Method            | PaDiM     |           |          |       | Cflow-AD  |           |          |       | DRAEM     |           |          |       | CDO       |           |          |       | Proposed Method |           |          |       |
 |-------------------|:-----------:|:-----------:|:----------:|:-------:|:-----------:|:-----------:|:----------:|:-------:|:-----------:|:-----------:|:----------:|:-------:|:-----------:|:-----------:|:----------:|:-------:|:-----------------:|:-----------:|:----------:|:-------:|
 | Metric \ Category | Img AUROC | Pix AUROC | Pix AUPR | AUPRO | Img AUROC | Pix AUROC | Pix AUPR | AUPRO | Img AUROC | Pix AUROC | Pix AUPR | AUPRO | Img AUROC | Pix AUROC | Pix AUPR | AUPRO | Img AUROC       | Pix AUROC | Pix AUPR | AUPRO |
