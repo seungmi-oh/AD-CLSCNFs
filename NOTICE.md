@@ -1,7 +1,12 @@
 NOTICE for [Your Project Name]
+
 [Your Project Name]
+
 Copyright [Year] [Your Name or Your Organization]
+
 This product includes software developed by the following:
+
+
 Original Code
 
 - Project: [Original Project Name]
@@ -9,6 +14,7 @@ Original Code
 
 Copyright [Year Range] [Original Author(s)]
 [Include any additional details required by the license]
+
 
 Modifications
 
