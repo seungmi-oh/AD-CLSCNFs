@@ -12,8 +12,8 @@ Anomaly detection (AD) aims to detect instances containing patterns that are sig
 Install
 </summary>
   
-    git clone https://github.com/meitu
-    cd CLS_NF_shareFE
+    git clone https://github.com/SeungMi-OH/2023_Access.git 
+    cd 2023_Access
     python3 -m pip install -U -r requirements.txt
    
 </details>
