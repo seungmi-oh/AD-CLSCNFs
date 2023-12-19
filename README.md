@@ -23,8 +23,8 @@ Install
 Prepare Dataset
 </summary>
   
-- We used [MVTec AD]<https://www.mvtec.com/company/research/datasets/mvtec-ad/> dataset to train and inference networks for anomaly detection and localization for quality inspection in Industry.
-- We also generated synthetic defect data using the [DTD]<https://www.robots.ox.ac.uk/~vgg/data/dtd/> dataset to finetune a feature extractor of CNF networks by training the pixel-wise classification network.  
+- We used [MVTec AD (MVTec Anomaly Detection)](https://www.mvtec.com/company/research/datasets/mvtec-ad/) dataset to train and inference networks for anomaly detection and localization for quality inspection in Industry.
+- We also generated synthetic defect data using the [DTD (Describable Textures Dataset)](https://www.robots.ox.ac.uk/~vgg/data/dtd/) to finetune a feature extractor of CNF networks by training the pixel-wise classification network.  
 - Using the command below, you can automatically download MVTecAD dataset and DTD dataset at the parent directory of the project directory.
 - Also, the command generates and saves a synthetic defect validation dataset at the parent directory of the project directory. 
   
@@ -136,11 +136,11 @@ Best Results for MVTec (Results of the uploaded checkpoint)
 
 ## Credits
 
-We implemented our method using some portions of the codes of [CFlow-AD](https://github.com/gudovskiy/cflow-ad), [DRAEM]<https://github.com/VitjanZ/DRAEM>, and [CDO]<https://github.com/caoyunkang/CDO> projects.  
+We implemented our method using some portions of the codes of [CFlow-AD](https://github.com/gudovskiy/cflow-ad), [DRAEM](https://github.com/VitjanZ/DRAEM), and [CDO](https://github.com/caoyunkang/CDO) projects.  
 We add a NOTICE file (NOTICE.md) to give credits the authors of the projects. 
 
 ## License
 
-This project is licensed under [the MIT License]<https://opensource.org/license/mit/>.
+This project is licensed under [the MIT License](https://opensource.org/license/mit/).
 
 
