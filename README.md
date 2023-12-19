@@ -83,7 +83,7 @@ Inference Our Reference MVTec Results
 Reference Results for MVTec (Averaged on three runs with different random initialization)
 </summary>
   
-| Category   \ Metric  | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
+| Category   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
 |----------------------|:---------:|:---------:|:---------:|:---------:|
 |        Bottle        |   99.89   |   99.12   |   88.06   |   96.60   |
 |         Cable        |   96.09   |   97.33   |   59.66   |   93.38   |
@@ -109,7 +109,7 @@ Reference Results for MVTec (Averaged on three runs with different random initia
 Best Results for MVTec (Results of the uploaded checkpoint)
 </summary>
   
-| Category   \ Metric  | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
+| Category   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
 |----------------------|:---------:|:---------:|:---------:|:---------:|
 | Bottle               |   100.00  |   99.24   |   89.93   |   97.00   |
 | Cable                |   99.54   |   97.25   |   58.59   |   93.26   |
