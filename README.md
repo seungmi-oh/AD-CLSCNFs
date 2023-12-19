@@ -75,7 +75,10 @@ Inference Our Reference MVTec Results
 
 
 ## Network Architecture
+We propose an anomaly detection method that combines a pixelwise classification network and conditional normalizing flow networks by sharing feature extractors to enhance performance. 
+We demonstrated that the combined network encourages performance improvement thanks to the collaborative effects of the two networks through extensive experiments on the MVTec Anomaly Detection (MVTecAD) dataset.
 
+[score_map_aggregation.pdf](https://github.com/SeungMi-OH/2023_Access/files/13712237/score_map_aggregation.pdf)
 
 ## The Quantiative Results
 <details>
