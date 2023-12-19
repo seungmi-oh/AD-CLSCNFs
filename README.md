@@ -76,7 +76,7 @@ Inference Our Reference MVTec Results
 
 ## Network Architecture
 
-![score_map_aggregation.pdf](https://github.com/SeungMi-OH/2023_Access/files/13712237/score_map_aggregation.pdf)
+[score_map_aggregation.pdf](https://github.com/SeungMi-OH/2023_Access/files/13712237/score_map_aggregation.pdf)
 
 ## The Quantiative Results
 <details>
