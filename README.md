@@ -1,4 +1,5 @@
 # Anomaly Detection Using Normalizing Flow-Based Density Estimation and Self-Supervising Pixelwise Classification with a Shared Feature Extractor
+This is the pytorch implementation to the 2023 IEEE Access paper "Anomaly Detection Using Normalizing Flow-Based Density Estimation and Self-Supervising Pixelwise Classification with a Shared Feature Extractor" by Seungmi Oh and Jeongtae Kim.
 
 ## Abstract
 Anomaly detection (AD) aims to detect instances containing patterns that are significantly distinct from normal data encountered during training. Recent studies on distance-based methods for anomaly detection have utilized a pretrained network on a large-scale dataset (e.g., ImageNet) to extract normal features for industrial inspection. However, because of the large domain gap, the network cannot extract intrinsic features from the inspection data. Moreover, simulation-based methods for anomaly detection generate and use synthetic abnormal data to improve discriminative ability. Nevertheless, this can cause a problem of overfitting to synthetic abnormal appearances. Considering these problems, we propose a method that combines a pixelwise classification network and conditional normalizing flow (CNF) networks by sharing feature extractors to enhance performance. We also propose a hybrid training algorithm to induce collaborative effects of these two networks. The pixelwise classification network finetunes the pretrained feature extractor of CNF networks using synthetic abnormal data to learn the discriminative and intrinsic features of the in-domain data. Subsequently, we train CNF networks with the finetuned feature extractor using only normal data for density estimation, thereby mitigating the overfitting problem of the pixelwise classification network. The final prediction is obtained by the weighted averaging of the predictions of the two networks to maintain their advantages and alleviate their disadvantages.
@@ -21,6 +22,10 @@ Install
 <summary>
 Prepare Dataset
 </summary>
+- We used [MVTec AD]<https://www.mvtec.com/company/research/datasets/mvtec-ad/> dataset to train and inference networks for anomaly detection and localization for quality inspection in Industry. 
+  We also generated synthetic defect data using the [DTD]<https://www.robots.ox.ac.uk/~vgg/data/dtd/> dataset to finetune a feature extractor of CNF networks by training the pixel-wise classification network.
+- Using the command below, you can automatically download MVTecAD dataset and DTD dataset at the parent directory of the project directory. 
+  Also, the command generates and saves a synthetic defect validation dataset at the parent directory of the project directory. 
   
     bash run_scripts/construct_dataset.sh
     
