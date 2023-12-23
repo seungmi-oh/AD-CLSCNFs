@@ -11,8 +11,11 @@ Anomaly detection (AD) aims to detect instances containing patterns that are sig
 <summary>
 Install
 </summary>
+- OS: Ubuntu 18.04.5 LTS
+- Language: python 3.6.9
+- Other dependencies in requirements.txt
   
-    git clone https://github.com/SeungMi-OH/2023_Access.git 
+    git clone https://github.com/seungmi-oh/2023_Access.git 
     cd 2023_Access
     python3 -m pip install -U -r requirements.txt
    
@@ -57,7 +60,7 @@ Inference Our Reference MVTec Results
 
 - We trained every models three times with random initialization to avoid over-estimation by each model. 
 
-- Among three experimental results, we seleced the best results for each category and uploaded the models at the google drive.
+- Among three experimental results, we seleced the best results for each category and uploaded the models at [the google drive](https://drive.google.com/drive/u/2/folders/1JDwTHN9FxB4ntgxMIeSQ3FwSKIEv8ocR).
 
 - You can download checkpoints of the models using the command below. 
     
