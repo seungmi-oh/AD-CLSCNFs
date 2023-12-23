@@ -15,10 +15,10 @@ Install
 - OS: Ubuntu 18.04.5 LTS
 - Language: python 3.6.9
 - Other dependencies in requirements.txt
-  
-    git clone https://github.com/seungmi-oh/2023_Access.git 
-    cd 2023_Access
-    python3 -m pip install -U -r requirements.txt
+
+      git clone https://github.com/seungmi-oh/2023_Access.git 
+      cd 2023_Access
+      python3 -m pip install -U -r requirements.txt
    
 </details>
 
