@@ -11,6 +11,7 @@ Anomaly detection (AD) aims to detect instances containing patterns that are sig
 <summary>
 Install
 </summary>
+  
 - OS: Ubuntu 18.04.5 LTS
 - Language: python 3.6.9
 - Other dependencies in requirements.txt
@@ -57,17 +58,14 @@ Inference Our Reference MVTec Results
 </summary>
   
 - Download checkpoints
-
 - We trained every models three times with random initialization to avoid over-estimation by each model. 
-
 - Among three experimental results, we seleced the best results for each category and uploaded the models at [the google drive](https://drive.google.com/drive/u/2/folders/1JDwTHN9FxB4ntgxMIeSQ3FwSKIEv8ocR).
-
 - You can download checkpoints of the models using the command below. 
     
       bash run_scripts/download_best_models.sh
       
 - Evaluate the best models of the proposed method and CFlow-AD for all categories and parse results
-    
+
       bash run_scripts/eval_best_models.sh
       
 - Evaluate the best models of the proposed method and CFlow-AD by selecting class_name (ex. bottle)
