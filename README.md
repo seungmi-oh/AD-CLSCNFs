@@ -100,6 +100,7 @@ We propose a novel deep learning-based AD system that combines a pixelwise class
 <summary>
 Reference Results for The MVTecAD and BTAD Datasets (Averaged on three runs with different random initialization)
 </summary>
+- MVTecAD dataset
   
 | Category   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
 |----------------------|:---------:|:---------:|:---------:|:---------:|
@@ -119,6 +120,16 @@ Reference Results for The MVTecAD and BTAD Datasets (Averaged on three runs with
 |         Wood         |   99.68   |   97.54   |   81.06   |   96.33   |
 |        Zipper        |   99.10   |   99.39   |   81.08   |   97.55   |
 |      **Average**     | **98.09** | **98.59** | **72.09** | **95.69** |
+
+- BTAD dataset
+
+|  Product   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
+|----------------------|:---------:|:---------:|:---------:|:---------:|
+| 01                   |   99.48   |   45.99   |   95.27   |   63.60   |
+| 02                   |   88.66   |   66.33   |   96.61   |   57.37   |
+| 03                   |   99.78   |   48.97   |   99.49   |   96.99   |
+| **Average**          | **95.97** | **53.76** | **97.12** | **72.66** |
+  
   
 </details>
 
@@ -127,24 +138,35 @@ Reference Results for The MVTecAD and BTAD Datasets (Averaged on three runs with
 Best Results for The MVTecAD and BTAD Datasets (Results of the uploaded checkpoint)
 </summary>
   
+- MVTecAD dataset
+  
 | Category   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
 |----------------------|:---------:|:---------:|:---------:|:---------:|
-| Bottle               |   100.00  |   99.24   |   89.93   |   97.00   |
-| Cable                |   99.54   |   97.25   |   58.59   |   93.26   |
-| Capsule              |   98.96   |   99.28   |   61.03   |   95.69   |
-| Carpet               |   99.72   |   99.44   |   79.56   |   98.09   |
-| Grid                 |   100.00  |   99.14   |   58.44   |   96.91   |
-| Hazelnut             |   99.79   |   99.22   |   79.63   |   97.94   |
-| Leather              |   100.00  |   99.81   |   81.22   |   99.55   |
-| Metal Nut            |   98.58   |   98.36   |   87.90   |   96.32   |
-| Pill                 |   97.41   |   99.07   |   88.10   |   96.65   |
-| Screw                |   95.35   |   99.05   |   53.01   |   95.36   |
-| Tile                 |   100.00  |   99.33   |   94.42   |   97.22   |
-| Toothbrush           |   98.89   |   98.50   |   49.79   |   90.42   |
-| Transistor           |   98.75   |   95.92   |   64.52   |   90.31   |
-| Wood                 |   99.82   |   97.68   |   81.80   |   96.40   |
-| Zipper               |   99.74   |   99.41   |   81.62   |   97.66   |
-| **Average**          | **99.10** | **98.71** | **73.97** | **95.92** |
+| Bottle               |   100.00  |   89.96   |   99.25   |   97.01   |
+| Cable                |   94.17   |   60.59   |   97.38   |   93.44   |
+| Capsule              |   98.96   |   61.03   |   99.28   |   95.63   |
+| Carpet               |   99.72   |   79.56   |   99.44   |   98.08   |
+| Grid                 |   100.00  |   58.43   |   99.14   |   96.91   |
+| Hazelnut             |   99.79   |   79.63   |   99.22   |   97.94   |
+| Leather              |   100.00  |   81.22   |   99.81   |   99.56   |
+| Metal Nut            |   98.58   |   87.91   |   98.37   |   96.32   |
+| Pill                 |   97.41   |   88.11   |   99.07   |   96.67   |
+| Screw                |   96.86   |   56.17   |   99.33   |   96.62   |
+| Tile                 |   100.00  |   94.42   |   99.33   |   97.23   |
+| Toothbrush           |   98.89   |   49.78   |   98.50   |   90.38   |
+| Transistor           |   98.75   |   64.52   |   95.92   |   90.30   |
+| Wood                 |   99.82   |   81.79   |   97.68   |   96.40   |
+| Zipper               |   99.74   |   81.63   |   99.41   |   97.66   |
+| **Average**          | **98.85** | **74.32** | **98.74** | **96.01** |
+
+- BTAD dataset
+
+|  Product   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
+|----------------------|:---------:|:---------:|:---------:|:---------:|
+| 01                   |   99.42   |   46.56   |   95.28   |   64.08   |
+| 02                   |   88.53   |   67.19   |   96.63   |   57.38   |
+| 03                   |   99.83   |   53.84   |   99.49   |   96.84   |
+| **Average**          | **95.93** | **55.86** | **97.13** | **72.77** |
 
 </details>
 
