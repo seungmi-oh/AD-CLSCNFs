@@ -16,8 +16,9 @@ Settings
 - Language: python 3.8.10
 - Other dependencies in requirements.txt or Pipfile.lock
 
-      git clone https://github.com/seungmi-oh/2023_Access.git 
-      cd 2023_Access
+      git clone https://github.com/seungmi-oh/AD-CLSCNFs.git
+      mv AD-CLSCNFs codes
+      cd codes
   
       # create and activate a virtual environment using virtualenv or pipenv
       python3 -m pip install -U -r requirements.txt # virtualenv
