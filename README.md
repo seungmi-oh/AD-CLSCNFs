@@ -9,16 +9,18 @@ We propose a novel deep learning-based anomaly detection (AD) system that combin
 ## Quick Start
 <details>
 <summary>
-Install
+Settings
 </summary>
   
-- OS: Ubuntu 18.04.5 LTS
-- Language: python 3.6.9
-- Other dependencies in requirements.txt
+- OS: Ubuntu 20.04.1 LTS
+- Language: python 3.8.10
+- Other dependencies in requirements.txt or Pipfile.lock
 
       git clone https://github.com/seungmi-oh/2023_Access.git 
       cd 2023_Access
-      python3 -m pip install -U -r requirements.txt
+      # create and activate a virtual environment using virtualenv or pipenv
+      python3 -m pip install -U -r requirements.txt # virtualenv
+      pipenv install Pipfile # pipenv
    
 </details>
 
@@ -27,7 +29,7 @@ Install
 Prepare Dataset
 </summary>
   
-- We used [MVTec AD (MVTec Anomaly Detection)](https://www.mvtec.com/company/research/datasets/mvtec-ad/) dataset to train and inference networks for anomaly detection and localization for quality inspection in Industry.
+- We used [MVTec AD (MVTec Anomaly Detection)](https://www.mvtec.com/company/research/datasets/mvtec-ad/) and [BTAD (Bean-Tech Anomaly Detection)](http://avires.dimi.uniud.it/papers/btad/btad.zip) datasets to train and inference networks for anomaly detection and localization for quality inspection in Industry.
 - We also generated synthetic defect data using the [DTD (Describable Textures Dataset)](https://www.robots.ox.ac.uk/~vgg/data/dtd/) to finetune a feature extractor of CNF networks by training the pixel-wise classification network.  
 - Using the command below, you can automatically download MVTecAD dataset and DTD dataset at the parent directory of the project directory.
 - Also, the command generates and saves a synthetic defect validation dataset at the parent directory of the project directory. 
@@ -42,49 +44,61 @@ Prepare Dataset
 Train and Evaluate Networks 
 </summary>
   
-- Train and evaluate our network and CFlow-AD for all categories  
-    
-      bash run_scripts/train_eval_total.sh
+- Train and evaluate our network and CFlow-AD for the MVTecAD and BTAD datasets
+
+      # train and evaluate our network and CFlow-AD for all categories of the MVTecAD dataset
+      bash run_scripts/mvtec/train_eval_total.sh
+      # train and evaluate our network and CFlow-AD for all products of the BTAD dataset
+      bash run_scripts/btad/train_eval_total.sh
+  
       
-- Train and evaluate our network and CFlow-AD by selecting class_name (ex. bottle)
+- Train and evaluate our network and CFlow-AD by selecting class_name (ex. bottle/01)
     
+      # train and evaluate our network and CFlow-AD for the category 'bottle' of the MVTecAD dataset
       bash run_scripts/mvtec/bottle/train_eval_total.sh
+      # train and evaluate our network and CFlow-AD for the product '01' of the BTAD dataset
+      bash run_scripts/btad/01/train_eval_total.sh
 
 </details>
 
 <details>
 <summary>
-Inference Our Reference MVTec Results
+Inference Our Models Shown The Best Performance for The MVTecAD and BTAD Datasets.
 </summary>
   
 - Download checkpoints
 - We trained every models three times with random initialization to avoid over-estimation by each model. 
-- Among three experimental results, we seleced the best results for each category and uploaded the models at [the google drive](https://drive.google.com/drive/u/2/folders/1JDwTHN9FxB4ntgxMIeSQ3FwSKIEv8ocR).
+- Among three experimental results, we seleced the best results for each category and uploaded the models at [the link](https://www.dropbox.com/scl/fi/wryllmczt0y1syf0a7o9d/best_models.zip?rlkey=hvlrovalojf15goo5vp142mue).
 - You can download checkpoints of the models using the command below. 
     
       bash run_scripts/download_best_models.sh
       
-- Evaluate the best models of the proposed method and CFlow-AD for all categories and parse results
+- Evaluate the best models of the proposed method and CFlow-AD 
 
-      bash run_scripts/eval_best_models.sh
+      # evaluate the best models of the proposed method and CFlow-AD for all categories of the MVTecAD dataset
+      bash run_scripts/mvtec/eval_best_models.sh
+      # evaluate the best models of the proposed method and CFlow-AD for all products of the BTAD dataset
+      bash run_scripts/btad/eval_best_models.sh
       
-- Evaluate the best models of the proposed method and CFlow-AD by selecting class_name (ex. bottle)
-    
-      bash run_scripts/mvtec/bottle/eval_best_models.sh
+- Evaluate the best models of the proposed method and CFlow-AD by selecting class_name (ex. bottle/01)
+
+      # evaluate the best models of the proposed method and CFlow-AD for the category 'bottle' of the MVTecAD dataset
+      bash run_scripts/mvtec/bottle/eval_best_model.sh
+      # evaluate the best models of the proposed method and CFlow-AD for the product '01' of the BTAD dataset
+      bash run_scripts/btad/01/eval_best_model.sh
 
 </details>
 
 
 ## Network Architecture
-We propose an anomaly detection method that combines a pixelwise classification network and conditional normalizing flow networks by sharing feature extractors to enhance performance. 
-We demonstrated that the combined network encourages performance improvement thanks to the collaborative effects of the two networks through extensive experiments on the MVTecAD dataset.
+We propose a novel deep learning-based AD system that combines a pixelwise classification network with conditional normalizing flow networks by sharing feature extractors. The proposed system showed the satisfactory performance thanks to the discriminative features of in-domain data and the positive impact of network ensembles.
 
 ![image](https://github.com/SeungMi-OH/2023_Access/assets/141846117/b8ead481-d94c-4b47-81a4-8b529a10732a)
 
 ## The Quantiative Results
 <details>
 <summary>
-Reference Results for MVTec (Averaged on three runs with different random initialization)
+Reference Results for The MVTecAD and BTAD Datasets (Averaged on three runs with different random initialization)
 </summary>
   
 | Category   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
@@ -110,7 +124,7 @@ Reference Results for MVTec (Averaged on three runs with different random initia
 
 <details>
 <summary>
-Best Results for MVTec (Results of the uploaded checkpoint)
+Best Results for The MVTecAD and BTAD Datasets (Results of the uploaded checkpoint)
 </summary>
   
 | Category   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
@@ -138,7 +152,7 @@ Best Results for MVTec (Results of the uploaded checkpoint)
 ## Credits
 
 We implemented our method using some portions of the codes of [CFlow-AD](https://github.com/gudovskiy/cflow-ad), [DRAEM](https://github.com/VitjanZ/DRAEM), and [CDO](https://github.com/caoyunkang/CDO) projects.  
-We add a NOTICE file (NOTICE.md) to give credits the authors of the projects. 
+We added a NOTICE file (NOTICE.md) to give credits the authors of the projects. 
 
 ## License
 
