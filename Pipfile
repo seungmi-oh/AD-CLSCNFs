@@ -1,0 +1,45 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu116"
+verify_ssl = false
+name = "torch"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu116"
+verify_ssl = false
+name = "torchvision"
+
+[packages]
+torch = {index = "torch",version = "==1.12.1+cu116"}
+torchvision = {index = "torchvision",version = "==0.13.1+cu116"}
+addict = "==2.4.0"
+freia = "==0.2"
+gdown = "==5.1.0"
+imageio = "==2.22.4"
+imgaug = "==0.4.0"
+matplotlib = "==3.6.2"
+numpy = "==1.23.5"
+opencv-python = "==4.6.0.66"
+opencv-python-headless = "==4.9.0.80"
+openpyxl = "==3.0.10"
+pandas = "==1.5.2"
+pillow = "==9.3.0"
+scikit-image = "==0.19.3"
+scikit-learn = "==1.2.0"
+scipy = "==1.6.0"
+seaborn = "==0.12.1"
+timm = "==0.6.7"
+torch-summary = "==1.4.5"
+torchsummary = "==1.5.1"
+tqdm = "==4.64.1"
+typing-extensions = "==4.4.0"
+pipfile = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
