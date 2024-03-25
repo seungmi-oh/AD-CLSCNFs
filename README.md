@@ -47,19 +47,19 @@ Train and Evaluate Networks
   
 - Train and evaluate our network and CFlow-AD for the MVTecAD and BTAD datasets
 
-      # train and evaluate our network and CFlow-AD for all categories of the MVTecAD dataset
+      # all categories of the MVTecAD dataset
       bash run_scripts/mvtec/train_eval_total.sh
   
-      # train and evaluate our network and CFlow-AD for all products of the BTAD dataset
+      # all products of the BTAD dataset
       bash run_scripts/btad/train_eval_total.sh
   
       
 - Train and evaluate our network and CFlow-AD by selecting class_name (ex. bottle/01)
     
-      # train and evaluate our network and CFlow-AD for the category 'bottle' of the MVTecAD dataset
+      # the category 'bottle' of the MVTecAD dataset
       bash run_scripts/mvtec/bottle/train_eval_total.sh
   
-      # train and evaluate our network and CFlow-AD for the product '01' of the BTAD dataset
+      # the product '01' of the BTAD dataset
       bash run_scripts/btad/01/train_eval_total.sh
 
 </details>
@@ -78,18 +78,18 @@ Inference Our Models Shown The Best Performance for The MVTecAD and BTAD Dataset
       
 - Evaluate the best models of the proposed method and CFlow-AD 
 
-      # evaluate the best models of the proposed method and CFlow-AD for all categories of the MVTecAD dataset
+      # all categories of the MVTecAD dataset
       bash run_scripts/mvtec/eval_best_models.sh
   
-      # evaluate the best models of the proposed method and CFlow-AD for all products of the BTAD dataset
+      # all products of the BTAD dataset
       bash run_scripts/btad/eval_best_models.sh
       
 - Evaluate the best models of the proposed method and CFlow-AD by selecting class_name (ex. bottle/01)
 
-      # evaluate the best models of the proposed method and CFlow-AD for the category 'bottle' of the MVTecAD dataset
+      # the category 'bottle' of the MVTecAD dataset
       bash run_scripts/mvtec/bottle/eval_best_model.sh
   
-      # evaluate the best models of the proposed method and CFlow-AD for the product '01' of the BTAD dataset
+      # the product '01' of the BTAD dataset
       bash run_scripts/btad/01/eval_best_model.sh
 
 </details>
