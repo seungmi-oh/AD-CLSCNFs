@@ -93,7 +93,7 @@ Inference Our Models Shown The Best Performance for The MVTecAD and BTAD Dataset
 ## Network Architecture
 We propose a novel deep learning-based AD system that combines a pixelwise classification network with conditional normalizing flow networks by sharing feature extractors. The proposed system showed the satisfactory performance thanks to the discriminative features of in-domain data and the positive impact of network ensembles.
 
-![graphical_abstract.pdf](https://github.com/seungmi-oh/AD-CLSCNFs/files/14742634/graphical_abstract.pdf)
+![image](https://github.com/seungmi-oh/AD-CLSCNFs/files/14742634/graphical_abstract.pdf)
 
 ## The Quantiative Results
 <details>
