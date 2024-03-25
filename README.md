@@ -100,6 +100,7 @@ We propose a novel deep learning-based AD system that combines a pixelwise class
 <summary>
 Reference Results for The MVTecAD and BTAD Datasets (Averaged on three runs with different random initialization)
 </summary>
+  
 - MVTecAD dataset
   
 | Category   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
