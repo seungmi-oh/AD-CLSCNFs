@@ -9,13 +9,6 @@ We propose a novel deep learning-based anomaly detection (AD) system that combin
 ## Quick Start
 <details>
 <summary>
-Structure of Project DIR
-</summary>
-
-
-
-<details>
-<summary>
 Settings
 </summary>
   
