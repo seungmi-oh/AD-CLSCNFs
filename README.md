@@ -18,6 +18,7 @@ Settings
 
       git clone https://github.com/seungmi-oh/2023_Access.git 
       cd 2023_Access
+  
       # create and activate a virtual environment using virtualenv or pipenv
       python3 -m pip install -U -r requirements.txt # virtualenv
       pipenv install Pipfile # pipenv
@@ -48,6 +49,7 @@ Train and Evaluate Networks
 
       # train and evaluate our network and CFlow-AD for all categories of the MVTecAD dataset
       bash run_scripts/mvtec/train_eval_total.sh
+  
       # train and evaluate our network and CFlow-AD for all products of the BTAD dataset
       bash run_scripts/btad/train_eval_total.sh
   
@@ -56,6 +58,7 @@ Train and Evaluate Networks
     
       # train and evaluate our network and CFlow-AD for the category 'bottle' of the MVTecAD dataset
       bash run_scripts/mvtec/bottle/train_eval_total.sh
+  
       # train and evaluate our network and CFlow-AD for the product '01' of the BTAD dataset
       bash run_scripts/btad/01/train_eval_total.sh
 
@@ -77,6 +80,7 @@ Inference Our Models Shown The Best Performance for The MVTecAD and BTAD Dataset
 
       # evaluate the best models of the proposed method and CFlow-AD for all categories of the MVTecAD dataset
       bash run_scripts/mvtec/eval_best_models.sh
+  
       # evaluate the best models of the proposed method and CFlow-AD for all products of the BTAD dataset
       bash run_scripts/btad/eval_best_models.sh
       
@@ -84,6 +88,7 @@ Inference Our Models Shown The Best Performance for The MVTecAD and BTAD Dataset
 
       # evaluate the best models of the proposed method and CFlow-AD for the category 'bottle' of the MVTecAD dataset
       bash run_scripts/mvtec/bottle/eval_best_model.sh
+  
       # evaluate the best models of the proposed method and CFlow-AD for the product '01' of the BTAD dataset
       bash run_scripts/btad/01/eval_best_model.sh
 
