@@ -119,7 +119,7 @@ class Anomaly_Score_Calculator:
             self.get_train_CNFs_anomaly_score_map()
             self.nf_super_mask = self.get_CNFs_anomaly_score_map(test_dist)
             if self.best_w_fe == True:
-                self.w_fe = self.get_best_w_fe(fe_super_mask, nf_super_mask, self.gt_mask)
+                self.w_fe = self.get_best_w_fe(self.fe_super_mask, self.nf_super_mask, self.gt_mask)
             else:
                 pass
             self.super_mask = self.aggregate_anomaly_score_map(self.fe_super_mask, self.nf_super_mask, self.w_fe)
