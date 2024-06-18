@@ -130,7 +130,7 @@ Reference Results for The MVTecAD and BTAD Datasets (Averaged on three runs with
 
 - BTAD dataset
 
-|  Product   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
+|  Product   \  Metric | Img AUROC | Pix AUPR |  Pix AUROC |   AUPRO   |
 |----------------------|:---------:|:---------:|:---------:|:---------:|
 | 01                   |   99.48   |   45.99   |   95.27   |   63.60   |
 | 02                   |   88.66   |   66.33   |   96.61   |   57.37   |
@@ -147,7 +147,7 @@ Best Results for The MVTecAD and BTAD Datasets (Results of the uploaded checkpoi
   
 - MVTecAD dataset
   
-| Category   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
+| Category   \  Metric | Img AUROC | Pix AUPR |  Pix AUROC |   AUPRO   |
 |----------------------|:---------:|:---------:|:---------:|:---------:|
 | Bottle               |   100.00  |   89.96   |   99.25   |   97.01   |
 | Cable                |   94.17   |   60.59   |   97.38   |   93.44   |
@@ -168,7 +168,7 @@ Best Results for The MVTecAD and BTAD Datasets (Results of the uploaded checkpoi
 
 - BTAD dataset
 
-|  Product   \  Metric | Img AUROC | Pix AUROC |  Pix AUPR |   AUPRO   |
+|  Product   \  Metric | Img AUROC | Pix AUPR |  Pix AUROC |   AUPRO   |
 |----------------------|:---------:|:---------:|:---------:|:---------:|
 | 01                   |   99.42   |   46.56   |   95.28   |   64.08   |
 | 02                   |   88.53   |   67.19   |   96.63   |   57.38   |
